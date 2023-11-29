@@ -9,19 +9,21 @@
       "48": "/icons/icon48.png",
       "128": "/icons/icon128.png"
     },
+    "permissions": [
+      "storage"
+    ],
     "content_scripts": [
       {
         "matches": ["https://store.steampowered.com/*"],
-        "js": ["scripts/content-scripts.js"]
+        "js": ["scripts/content-scripts.js"],
+        "run_at": "document_end"
       }
     ],
     "action":{
         "default_popup":"options/popup.html",
         "default_icon": {
-          "16": "/icons/icon16.png",
-          "32": "/icons/icon32.png",
-          "48": "/icons/icon48.png",
-          "128": "/icons/icon128.png"
+          "128": "/icons/icon128.png",
+          "250": "/assets/sutlacmode.jpg"
         }
     }
 }

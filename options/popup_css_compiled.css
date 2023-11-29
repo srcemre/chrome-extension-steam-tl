@@ -1,34 +1,111 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: rgb(135,35,65);
-    background: linear-gradient(4deg, rgba(135,35,65,1) 0%, rgba(34,9,44,1) 50%);
-    color: #fd5b43;
-    margin: 0;
-    padding: 8px;
-    width: 380px;
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-  }
+  font-family: 'Arial', sans-serif;
+  background: rgb(135, 35, 65);
+  background: linear-gradient(4deg, rgba(135, 35, 65, 1) 0%, rgba(34, 9, 44, 1) 50%);
+  color: #fc6953;
+  text-shadow: 0px 1px 1px rgb(0, 0, 0);
+  margin: 0;
+  padding: 8px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  /* Align items vertically in the center */
+}
 
-  #logo {
-    width: 128px;
-    height: 128px;
-    margin-right: 16px;
-  }
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: auto; 
+}
 
-  #text-and-button {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) */
-  }
+.logoInfo{
+  width: 150px;
+  margin-right: 10px;
+}
 
-  #github-button {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+.logoInfo a {
+  color: wheat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align items to the start (left) */
+}
+
+.container {
+  width: 95%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.info{
+  font-style: italic;
+  font-size: 11px;
+  color: wheat;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.inputClass {
+  width: 100%;
+  padding: 2px;
+  outline:none;
+  background: linear-gradient(to left top, rgba(135, 35, 65, 1), rgba(34, 9, 44, 1)) fixed;
+  border-radius: 10px;
+  border: 2px solid #fd5b43;
+  color: wheat;
+  transition: all 0.5s;
+}
+.inputClass::placeholder {
+  color: wheat;
+}
+.inputClass:hover {
+  border: 2px solid #8d3325;
+}
+.inputClass:focus {
+  border: 2px solid #8d3325;
+  background: linear-gradient(to left top, rgba(34, 9, 44, 1),rgba(135, 35, 65, 1) ) fixed;
+}
+
+.button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 8px;
+  font-weight:bold;
+  outline:none;
+  background: linear-gradient(to left top, rgba(34, 9, 44, 1),rgba(135, 35, 65, 1) ) fixed;
+  border-radius: 10px;
+  border: 2px solid #8d3325;
+  color: wheat;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background: linear-gradient(to left top, rgb(132, 111, 141),rgb(245, 244, 244) ) fixed;
+}
+
+.button:active {
+  background: linear-gradient(to left top, rgb(44, 9, 14),rgba(135, 35, 65, 1) ) fixed;
+}
+
+.slider {
+  accent-color:  #ff4225;
+}
+.slider:hover {
+  accent-color:  rgb(132, 111, 141);
+}
 
