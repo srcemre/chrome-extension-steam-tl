@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="popup_css_compiled.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <img id="logo" src="../icons/icon128.png" alt="Extension Logo">
-    <div id="text-and-button">
-        <h3>Steam Türk Lirasına Çevirme</h3>
-        <p>Bug reports, feature requests and pull requests are always welcome.</p>
-        <a id="github-button" href="https://github.com/srcemre/chrome-extension-steam-tl" target="_blank"><i class="fa fa-github"></i></i> Visit GitHub Repository</a>
+  <div>
+    <img class="logo" src="../icons/icon128.png" alt="Extension Logo">
+    <p class="logoInfo" >Bug reports, feature requests and pull requests are always welcome.<br><a
+        href="https://github.com/srcemre/chrome-extension-steam-tl" target="_blank"><i class="fa fa-github"></i></i>
+        Visit GitHub Repository</a></p>
+  </div>
+  <div class="content">
+    <p><b>Steam Türk Lirasına Çevirme</b></p>
+    <div class="container">
+      <div class="column">
+        <label>
+          <input class="slider" type="checkbox" id="status"> Aç/Kapa
+        </label>
+        <label>
+          <input class="slider" type="checkbox" id="sutlacMode"> Sütlaç Modu
+        </label>
+        <div>
+          <p class="info">* Sütlac modu aşağıdaki belirtilen görseldeki gibi kendi para biriminizi oluşturmanızı sağlar.
+          </p>
+          <img class="info" src="../assets/sutlacmode.jpg" alt="Extension Logo">
+        </div>
+      </div>
+      <div class="column">
+        <label for="symbolInput">Sembol:</label>
+        <input class="inputClass" type="text" id="symbolInput" placeholder="🍚">
+        <label for="valueInput">Değer (TL Cinsinden):</label>
+        <input class="inputClass" type="number" id="valueInput" step="0.01" placeholder="100">
+        <label for="currencyInput">Sembol İsmi:</label>
+        <input class="inputClass" type="text" id="currencyInput" placeholder="Sütlaç">
+        <button class="button" id="saveButton">Kaydet</button>
+      </div>
     </div>
+
+
 </body>
+<footer>
+  <script src="popup.js"></script>
+</footer>
+
 </html>
