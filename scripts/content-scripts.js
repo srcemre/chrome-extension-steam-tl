@@ -42,10 +42,6 @@ async function replaceDiscountPrices() {
     if (!isSutlacMode) {
 
       elements.forEach((element) => {
-        
-    if (element.classList.contains('discount_original_price') || element.classList.contains('salepreviewwidgets_StoreOriginalPrice_1EKGZ'))
-    return;
-
         const matches = element.textContent.match(/(\D+)([\d.]+)/);
         if (!matches || matches[1].includes("₺")) {
           return;
@@ -55,11 +51,6 @@ async function replaceDiscountPrices() {
     } else {
 
       elements.forEach((element) => {
-
-        
-    if (element.classList.contains('discount_original_price') || element.classList.contains('salepreviewwidgets_StoreOriginalPrice_1EKGZ'))
-    return;
-  
         const matches = element.textContent.match(/(\D+)([\d.]+)/);
         if (!matches || matches[1].includes(symbol)) {
           return;
